@@ -31,7 +31,6 @@ class xldict():
         return self.__totalsheets
 
 if __name__ == '__main__':
-    xl = xldict('D:\\PycharmProjects\\autotest\\test_cases\\ets-demo-waika.xlsx')
+    xl = xldict('E:\\Python_codes\\autotest\\test_cases\\fund.xlsx')
     a = xl.getdict(2, 0)
-    for key in a:
-        print(key,':',a[key])
+    print(xl.getsheetno())

@@ -3,11 +3,12 @@ __author__ = 'maxh'
 from autourl import autourl
 from xldict import xldict
 from headParse import xl2array
+from mail import mail
 import time
 
 
 merchant_entry = autourl()
-xl = xldict('D:\\PycharmProjects\\autotest\\test_cases\\ets-demo-waika.xlsx')
+xl = xldict('E:\\Python_codes\\autotest\\test_cases\\ets-demo-waika.xlsx')
 
 for sheetno in range(xl.getsheetno()):
     for line in range(2, xl.getrows()):
